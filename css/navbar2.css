@@ -1,0 +1,139 @@
+html, body {
+  margin:0;
+  padding:0;
+  width:100%;
+  min-width:25%;
+  color: #2F3242;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color:  #d0d3d4;
+}
+
+header {
+  height:50px;
+}
+
+.content {
+  width:90%;
+  margin:4em auto;
+  font-size:20px;
+  line-height:30px;
+  text-align:justify;
+}
+
+.logo {
+  position:fixed;
+  float:left;
+  margin:16px 36px;
+  color:#fff;
+  font-weight: bold;
+  font-size:24px;
+}
+
+nav {
+  position:fixed;
+  width:100%;
+}
+
+nav ul {
+  list-style:none;
+  background-color: #2F3242;
+  overflow:hidden;
+  color:#fff;
+  padding:0;
+  text-align:center;
+  margin:0;
+  transition: 1s;
+}
+
+nav.black ul {
+  background-color: #2F3242;
+}
+
+nav ul li {
+  display:inline-block;
+  padding:20px;
+}
+
+nav ul li a {
+  text-decoration:none;
+  color:#fff;
+  font-size:20px;
+}
+
+.menu-icon {
+  width:100%;
+  background:#000;
+  text-align:right;
+  box-sizing:border-box;
+  padding:15px 40px;  
+  color:#fff;
+  display:none;
+}
+
+@media(max-width:580px) {
+  .logo {
+    position:fixed;
+    top:0;
+    margin-top:16px;
+  }
+  nav ul {
+    max-height:0px;
+    background:#000;
+  }
+  nav.black ul {
+    background:#000;
+  }
+  .showing {
+    max-height:20em;
+  }
+  nav ul li {
+    box-sizing:border-box;
+    width:100%;
+    padding:24px;
+    text-align: center;
+  }
+  .menu-icon {
+    display:block;
+  }
+}
+
+
+
+
+/* IMAGEM */
+
+#circle
+{
+  width:400px;
+  height:400px;
+  border:1px solid black;
+  border-radius:100%;
+  background:url(https://playragnarokonlinebr.com/img/guias/sistema-de-navegacao/cover.jpg) center no-repeat; 
+}
+
+.inline-block{
+	width: 40%;
+	padding: 20px;
+	display: inline-block;
+  color: #2F3242;
+  font-size: 24px;
+}
+
+.inline-block p{
+  font-size: 18px;
+}
+
+.conteiner{
+  text-align:center;
+}
+
+#hello {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+
