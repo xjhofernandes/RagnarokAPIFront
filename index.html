@@ -1,57 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-32">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ragnarök API</title>
-    <link rel="stylesheet" href="/css/navbar.css">
+    <title>Sticky NavBar</title>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/navbar2.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
+
 <body>
-    <nav class="responsive__nav">
-        <ul class="logo">
-            <li class="titulo"><a>Ragnarök API</a></li>
-        </ul>
-        <ul class="items">
-            <li class="item"><a class="clicaveis" href="#">Início</a></li>
-            <li class="item"><a class="clicaveis" href="#">Como funciona?</a></li>
-            <li class="item"><a class="clicaveis" href="#">Atributos</a></li>
-            <li class="item"><a class="clicaveis" href="https://github.com/xjhofernandes/RagnarokAPI/">Repositório</a></li>
-        </ul>
-    </nav>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <i class=" fa fa-bars fa-2x"></i>
+                </div>
 
-    <svg width="380px" height="500px" viewBox="0 0 837 1045" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-            <path d="M353,9 L626.664028,170 L626.664028,487 L353,642 L79.3359724,487 L79.3359724,170 L353,9 Z" id="Polygon-1" stroke="#007FB2" stroke-width="6" sketch:type="MSShapeGroup"></path>
-            <path d="M78.5,529 L147,569.186414 L147,648.311216 L78.5,687 L10,648.311216 L10,569.186414 L78.5,529 Z" id="Polygon-2" stroke="#EF4A5B" stroke-width="6" sketch:type="MSShapeGroup"></path>
-            <path d="M773,186 L827,217.538705 L827,279.636651 L773,310 L719,279.636651 L719,217.538705 L773,186 Z" id="Polygon-3" stroke="#795D9C" stroke-width="6" sketch:type="MSShapeGroup"></path>
-            <path d="M639,529 L773,607.846761 L773,763.091627 L639,839 L505,763.091627 L505,607.846761 L639,529 Z" id="Polygon-4" stroke="#F2773F" stroke-width="6" sketch:type="MSShapeGroup"></path>
-            <path d="M281,801 L383,861.025276 L383,979.21169 L281,1037 L179,979.21169 L179,861.025276 L281,801 Z" id="Polygon-5" stroke="#36B455" stroke-width="6" sketch:type="MSShapeGroup"></path>
-        </g>
-    </svg>
-    <div class="message-box">
-      <h1>Hello, Ragnarok API!</h1>
-      <p>Version : 1.0.4</p>
-      <div class="buttons-con">
-        <div class="action-link-wrap">
-          <a href="https://github.com/xjhofernandes/RagnarokAPI" class="link-button">Acesse o repositório!</a>
+                <div class="logo">Ragnarök API</div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Como funciona?</a></li>
+                        <li><a href="#">Atributos</a></li>
+                        <li><a href="https://github.com/xjhofernandes/RagnarokAPI/">Documentação</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- <div id="circle">
+        </div> -->
+
+        <div class="conteiner">
+            <div class="inline-block">
+                <div class="hero-text">
+                    <h2>Encontre e manipule milhares de dados de itens e monstros de Ragnarök Online</h2>
+                    <p>Use o API REST Ragnarök API em suas futuras aplicações ou projetos de desenvolvimento. Let's Rock!!</p>
+                    <!-- <a class="botao" href="https://github.com/xjhofernandes/RagnarokAPI" title="Nossa Documentação">Nossa documentação</a>
+                    <button href="https://github.com/xjhofernandes/RagnarokAPI" id="hello">Nossa Documentação</button> -->
+                    <a href="https://github.com/xjhofernandes/RagnarokAPI" id="hello" class="button">Nossa Documentação</a>
+                </div>
+            </div>
+            <div class="inline-block">
+                <div id="circle">
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-   
 
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-    
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum volutpat vulputate. Nam
+                maximus neque sit amet nunc sagittis dictum tempus sit amet ipsum. Duis pharetra sodales purus, quis
+                tempus ligula dictum non. Etiam iaculis metus vitae turpis posuere, ac dignissim neque porttitor. Mauris
+                pulvinar hendrerit est, ut eleifend enim porta at. Ut convallis erat massa, nec dapibus mi auctor eu.
+                Nam quis aliquet lectus. Nullam non accumsan lacus. Sed consequat tortor nunc, id blandit massa aliquam
+                quis. Morbi erat felis, laoreet et elit sit amet, gravida ultricies augue. Aliquam vitae tortor ut felis
+                eleifend euismod. Pellentesque nec quam augue. Pellentesque posuere ipsum quis condimentum posuere.
+                Donec eu fringilla arcu, ac facilisis erat.</p>
+
+            <p>Duis dictum sit amet eros et placerat. Mauris ultricies semper mauris, in accumsan urna elementum non.
+                Maecenas turpis risus, tincidunt vel porttitor ac, maximus ac est. Phasellus egestas fringilla placerat.
+                Etiam tempor ante eget leo faucibus convallis. Phasellus malesuada libero nec erat ultricies, in
+                malesuada risus finibus. Nam sit amet neque a nisl vulputate luctus a a lectus. Duis nisi ligula, luctus
+                et tortor id, semper ultricies magna. Mauris ut lectus tellus. Ut euismod libero scelerisque, pulvinar
+                nisl elementum, tincidunt erat.</p>
+
+            <p>Proin non magna tristique, feugiat sapien sit amet, sollicitudin diam. Aliquam erat volutpat. Sed tortor
+                odio, pellentesque et eleifend et, vulputate quis elit. Duis quis tincidunt nisi, eu dignissim leo. Cras
+                nibh lectus, rutrum porta lectus sed, imperdiet tincidunt eros. Class aptent taciti sociosqu ad litora
+                torquent per conubia nostra, per inceptos himenaeos. Ut nisl tellus, ornare pellentesque lectus sit
+                amet, dapibus pharetra neque.</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //Menu toggle-effect
+        $(document).ready(function () {
+            $(".menu-icon").on("click", function () {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+
+        //Scrolling Effect
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black')
+            }
+        })
+    </script>
 </body>
+
 </html>
