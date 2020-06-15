@@ -137,3 +137,9 @@ nav ul li a {
 }
 
 
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #2F3242;
+  color: #d0d3d4;
+}
