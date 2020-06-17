@@ -78,7 +78,7 @@ nav ul li a {
     position:fixed;
     top:0;
     margin-top:16px;
-  }
+  } 
   nav ul {
     max-height:0px;
     background:#000;
@@ -142,4 +142,6 @@ nav ul li a {
   flex-wrap: nowrap;
   background-color: #2F3242;
   color: #d0d3d4;
+  height: 92px;
+	padding-left: 5%;
 }
