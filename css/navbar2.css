@@ -157,3 +157,17 @@ nav ul li a {
 {
   
 }
+
+.busca{
+  border: 1px solid black;
+}
+
+
+.busca .site{
+  color: red;
+  background-color: #000;
+}
+
+.busca .form-control{
+  height: 36px;
+}
