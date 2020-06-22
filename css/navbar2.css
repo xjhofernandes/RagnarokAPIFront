@@ -170,4 +170,18 @@ nav ul li a {
 
 .busca .form-control{
   height: 36px;
+  padding: 6px;
+}
+
+.button {
+  background-color: #2F3242;; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
 }
