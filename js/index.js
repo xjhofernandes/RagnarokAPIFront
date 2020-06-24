@@ -1,17 +1,14 @@
+function FazerRequisição (){
+  request = document.getElementById('request');
+  resultado = document.getElementById('jsonResult');
 
-//Menu toggle-effect
-$(document).ready(function(){
-    $(".menu-icon").on("click",function(){
-      $("nav ul").toggleClass("showing");
-    });
-  });
-  
-  //Scrolling Effect
-  $(window).on('scroll', function(){
-    if($(window).scrollTop()) {
-      $('nav').addClass('black');
-    }
-    else{
-      $('nav').removeClass('black')
-    }
+  fetch('https://ragnarokapi.herokuapp.com/' + request.value)
+  .then(function(response) {
+    return response.json();
   })
+  .then(function(myBlob) {
+    var objectURL = JSON.stringify(myBlob, undefined, 4);
+    resultado.value = objectURL;
+  }); 
+}
+

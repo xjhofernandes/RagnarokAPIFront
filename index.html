@@ -1,57 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-32">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ragnarök API</title>
-    <link rel="stylesheet" href="/css/navbar.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/navbar2.css">
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
+
 <body>
-    <nav class="responsive__nav">
-        <ul class="logo">
-            <li class="titulo"><a>Ragnarök API</a></li>
-        </ul>
-        <ul class="items">
-            <li class="item"><a class="clicaveis" href="#">Início</a></li>
-            <li class="item"><a class="clicaveis" href="#">Como funciona?</a></li>
-            <li class="item"><a class="clicaveis" href="#">Atributos</a></li>
-            <li class="item"><a class="clicaveis" href="https://github.com/xjhofernandes/RagnarokAPI/">Repositório</a></li>
-        </ul>
-    </nav>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <i class=" fa fa-bars fa-2x"></i>
+                </div>
 
-    <svg width="380px" height="500px" viewBox="0 0 837 1045" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-            <path d="M353,9 L626.664028,170 L626.664028,487 L353,642 L79.3359724,487 L79.3359724,170 L353,9 Z" id="Polygon-1" stroke="#007FB2" stroke-width="6" sketch:type="MSShapeGroup"></path>
-            <path d="M78.5,529 L147,569.186414 L147,648.311216 L78.5,687 L10,648.311216 L10,569.186414 L78.5,529 Z" id="Polygon-2" stroke="#EF4A5B" stroke-width="6" sketch:type="MSShapeGroup"></path>
-            <path d="M773,186 L827,217.538705 L827,279.636651 L773,310 L719,279.636651 L719,217.538705 L773,186 Z" id="Polygon-3" stroke="#795D9C" stroke-width="6" sketch:type="MSShapeGroup"></path>
-            <path d="M639,529 L773,607.846761 L773,763.091627 L639,839 L505,763.091627 L505,607.846761 L639,529 Z" id="Polygon-4" stroke="#F2773F" stroke-width="6" sketch:type="MSShapeGroup"></path>
-            <path d="M281,801 L383,861.025276 L383,979.21169 L281,1037 L179,979.21169 L179,861.025276 L281,801 Z" id="Polygon-5" stroke="#36B455" stroke-width="6" sketch:type="MSShapeGroup"></path>
-        </g>
-    </svg>
-    <div class="message-box">
-      <h1>Hello, Ragnarok API!</h1>
-      <p>Version : 1.0.4</p>
-      <div class="buttons-con">
-        <div class="action-link-wrap">
-          <a href="https://github.com/xjhofernandes/RagnarokAPI" class="link-button">Acesse o repositório!</a>
+                <div class="logo">Ragnarök API</div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#start">Inicio</a></li>
+                        <li><a href="#howToWork">Como funciona?</a></li>
+                        <li><a href="#attributes">Atributos</a></li>
+                        <li><a href="https://github.com/xjhofernandes/RagnarokAPI/">Documentação</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div id="start" class="conteiner">
+            <div class="inline-block">
+                <div class="hero-text">
+                    <h2>Encontre e manipule milhares de dados de itens e monstros de Ragnarök Online</h2>
+                    <p>Use o API REST Ragnarök API em suas futuras aplicações ou projetos de desenvolvimento. Let's
+                        Rock!!</p>
+                    <a href="https://github.com/xjhofernandes/RagnarokAPI" id="hello" class="button">Nossa
+                        Documentação</a>
+                </div>
+            </div>
+            <div class="inline-block">
+                <div id="circle">
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-   
 
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-    
+
+    <br id="howToWork">
+    <br>
+    <br>
+    <div class="flex-container">
+        <div>
+            <h1>Como funciona?</h1>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <p>Utilizando os endereços "api/item/Id do Item" ou "api/monster/Id do Monstro", é possível obter as informações
+            de itens ou monstros de Ragnarök Online. Teste a requisição abaixo:</p>
+
+        <div class="bloco">
+
+            <div class="busca">
+                <label class="site">https://ragnarokapi.herokuapp.com/</label><input id="request" type="text"
+                    value="api/monster/1002" class="form-control"><button type="button" class="request-button"
+                    onclick="FazerRequisição()">Buscar</button>
+            </div>
+            <br>
+            <textarea id="jsonResult" class="json-text" rows="4" cols="50" readonly>{
+    "monsterId": "1002",
+    "monsterName": "Poring",
+    "monsterGifUrl": "https://static.ragnaplace.com/db/npc/gif/1002.gif",
+    "monsterDrops": [
+    {
+        "id": null,
+        "itemId": 909,
+        "nameItem": "Jellopy",
+        "itemImgUrl": "https://static.ragnaplace.com/bro/item/909.png",
+        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/909.png",
+        "cardImgUrl": null,
+        "itemDescription": "Pequena cristalização formada por alguns monstros.\r\n_\r\nPeso: 1\r\n"
+    },
+    {
+        "itemId": 1202,
+        "nameItem": "Faca",
+        "itemImgUrl": "https://static.ragnaplace.com/bro/item/1202.png",
+        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/1202.png",
+        "cardImgUrl": null,
+        "itemDescription": "Uma simples faca. Arraste esta arma para sua janela de equipamento para usar.\r\nTipo: Adaga\r\nForça de Ataque: 17\r\nPeso: 40\r\nNível da arma: 1\r\nNível necessário: Nenhum\r\nClasses que utilizam: Aprendiz/ Espadachim/ Mago/ Arqueiro/ Mercador / Gatuno e as respectivas evoluções\r\n"
+    },
+    {
+        "itemId": 938,
+        "nameItem": "Muco Pegajoso",
+        "itemImgUrl": "https://static.ragnaplace.com/bro/item/938.png",
+        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/938.png",
+        "cardImgUrl": null,
+        "itemDescription": "Misterioso líquido pegajoso.\r\n_\r\nPeso: 1\r\n"
+    },
+    {
+        "itemId": 512,
+        "nameItem": "Maçã",
+        "itemImgUrl": "https://static.ragnaplace.com/bro/item/512.png",
+        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/512.png",
+        "cardImgUrl": null,
+        "itemDescription": "Fruta de sabor doce e aroma apetitoso. \r\nDê um clique duplo no item para usar.\r\n--------------------------\r\nRecupera cerca de 16 a 22 de HP.\r\n--------------------------\r\nPeso: 2\r\n"
+                    },
+                    {
+        "itemId": 713,
+        "nameItem": "Garrafa Vazia",
+        "itemImgUrl": "https://static.ragnaplace.com/bro/item/713.png",
+        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/713.png",
+        "cardImgUrl": null,
+        "itemDescription": "Uma garrafa vazia para se carregar líquidos.\r\n_\r\nPeso: 2\r\n"
+                    },
+                    {
+        "itemId": 512,
+        "nameItem": "Maçã",
+        "itemImgUrl": "https://static.ragnaplace.com/bro/item/512.png",
+        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/512.png",
+        "cardImgUrl": null,
+        "itemDescription": "Fruta de sabor doce e aroma apetitoso. \r\nDê um clique duplo no item para usar.\r\n--------------------------\r\nRecupera cerca de 16 a 22 de HP.\r\n--------------------------\r\nPeso: 2\r\n"
+                    },
+                    {
+        "itemId": 619,
+        "nameItem": "Maçã Verde",
+        "itemImgUrl": "https://static.ragnaplace.com/bro/item/619.png",
+        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/619.png",
+        "cardImgUrl": null,
+        "itemDescription": "Maçã azeda ainda não amadurecida. Comida favorita do Poring.\r\nClasse: Item para Domesticar\r\nPeso: 5\r\n"
+                    },
+                    {
+        "itemId": 4001,
+        "nameItem": "Carta Poring",
+        "itemImgUrl": "https://static.ragnaplace.com/bro/item/4001.png",
+        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/4001.png",
+        "cardImgUrl": "https://static.ragnaplace.com/bro/card/4001.png",
+        "itemDescription": "SOR +2, Esquiva Perfeita +1\r\nCombine com um item para utilizar sua propriedade. \r\nClasse: Carta\r\nEquipa em: Armadura\r\nPeso: 1\r\n"
+                    },
+                    {
+        "itemId": 601,
+        "nameItem": "Asa de Mosca",
+        "itemImgUrl": "https://static.ragnaplace.com/bro/item/601.png",
+        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/601.png",
+        "cardImgUrl": null,
+        "itemDescription": "Par de asas de mosca encantadas com magia.\r\nDê clique duplo neste item para ser transportar até um local aleatório no mapa.\r\n_\r\nPeso: 5\r\n"
+                    }
+                ],
+    "monsterStats": {
+        "monsterLevel": 1,
+        "monsterHp": 60,
+        "monsterSize": 1,
+        "monsterRace": 3
+    },
+                "elementExtraDamage": {
+                    "neutral": 100,
+                    "water": 25,
+                    "earth": 100,
+                    "fire": 90,
+                    "wind": 175,
+                    "poison": 100,
+                    "holy": 100,
+                    "dark": 100,
+                    "ghost": 100,
+                    "undead": 100
+                },
+                "monsterSpawnMaps": [
+                    {
+                        "mapId": "gef_fild00",
+                        "mapName": "Arredores de Geffen (00)"
+                    },
+                    {
+                        "mapId": "gef_fild07",
+                        "mapName": "Arredores de Geffen (07)"
+                    },
+                    {
+                        "mapId": "pay_fild01",
+                        "mapName": "Floresta de Payon (01)"
+                    },
+                    {
+                        "mapId": "pay_fild03",
+                        "mapName": "Floresta de Payon (03)"
+                    },
+                    {
+                        "mapId": "pay_fild04",
+                        "mapName": "Floresta de Payon (04)"
+                    },
+                    {
+                        "mapId": "prt_fild01",
+                        "mapName": "Arredores de Prontera (01)"
+                    },
+                    {
+                        "mapId": "prt_fild06",
+                        "mapName": "Arredores de Prontera (06)"
+                    },
+                    {
+                        "mapId": "prt_fild08",
+                        "mapName": "Arredores de Prontera (08)"
+                    },
+                    {
+                        "mapId": "prt_maze01",
+                        "mapName": "Labirinto da Floresta (1)"
+                    },
+                    {
+                        "mapId": "xmas_dun01",
+                        "mapName": "Depósito da Fábrica de Brinquedos"
+                    },
+                    {
+                        "mapId": "1@tower",
+                        "mapName": "Torre Sem Fim"
+                    }
+                ]
+            }</textarea>
+
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div>
+            <h1 id="attributes">Atributos</h1>
+        </div>
+    </div>
+
+    <div class="content">
+        <p>Em Construção...</p>
+
+    </div>
+
+    <script type="text/javascript">
+        //Menu toggle-effect
+        $(document).ready(function () {
+            $(".menu-icon").on("click", function () {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+
+        //Scrolling Effect
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black')
+            }
+        })
+    </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
