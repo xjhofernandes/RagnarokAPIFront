@@ -23,7 +23,7 @@ function teste (){
 
   var b = '';
   
-  fetch('https://ragnarokapi.herokuapp.com/api/monster/1247')
+  fetch('https://ragnarokapi.herokuapp.com/api/monster/1002')
   .then(function(response) {
     return response.json();
   })
