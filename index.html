@@ -65,12 +65,164 @@
         <div class="bloco">
 
             <div class="busca">
-                <label class="site">https://ragnarokapi.herokuapp.com/</label><input type="text"
+                <label class="site">https://ragnarokapi.herokuapp.com/</label><input id="request" type="text"
                     value="api/monster/1002" class="form-control"><button type="button" class="request-button"
-                    onclick="teste()">Buscar</button>
+                    onclick="FazerRequisição()">Buscar</button>
             </div>
             <br>
-            <textarea id="jsonResult" class="json-text" rows="4" cols="50" readonly></textarea>
+            <textarea id="jsonResult" class="json-text" rows="4" cols="50" readonly>{
+    "id": "5ed42f8762572cde6be78830",
+    "monsterId": "1002",
+    "monsterName": "Poring",
+    "monsterGifUrl": "https://static.ragnaplace.com/db/npc/gif/1002.gif",
+    "monsterDrops": [
+    {
+        "id": null,
+        "itemId": 909,
+        "nameItem": "Jellopy",
+        "itemImgUrl": "https://static.ragnaplace.com/bro/item/909.png",
+        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/909.png",
+        "cardImgUrl": null,
+        "itemDescription": "Pequena cristalização formada por alguns monstros.\r\n_\r\nPeso: 1\r\n"
+    },
+    {
+        "id": null,
+        "itemId": 1202,
+                        "nameItem": "Faca",
+                        "itemImgUrl": "https://static.ragnaplace.com/bro/item/1202.png",
+                        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/1202.png",
+                        "cardImgUrl": null,
+                        "itemDescription": "Uma simples faca. Arraste esta arma para sua janela de equipamento para usar.\r\nTipo: Adaga\r\nForça de Ataque: 17\r\nPeso: 40\r\nNível da arma: 1\r\nNível necessário: Nenhum\r\nClasses que utilizam: Aprendiz/ Espadachim/ Mago/ Arqueiro/ Mercador / Gatuno e as respectivas evoluções\r\n"
+                    },
+                    {
+                        "id": null,
+                        "itemId": 938,
+                        "nameItem": "Muco Pegajoso",
+                        "itemImgUrl": "https://static.ragnaplace.com/bro/item/938.png",
+                        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/938.png",
+                        "cardImgUrl": null,
+                        "itemDescription": "Misterioso líquido pegajoso.\r\n_\r\nPeso: 1\r\n"
+                    },
+                    {
+                        "id": null,
+                        "itemId": 512,
+                        "nameItem": "Maçã",
+                        "itemImgUrl": "https://static.ragnaplace.com/bro/item/512.png",
+                        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/512.png",
+                        "cardImgUrl": null,
+                        "itemDescription": "Fruta de sabor doce e aroma apetitoso. \r\nDê um clique duplo no item para usar.\r\n--------------------------\r\nRecupera cerca de 16 a 22 de HP.\r\n--------------------------\r\nPeso: 2\r\n"
+                    },
+                    {
+                        "id": null,
+                        "itemId": 713,
+                        "nameItem": "Garrafa Vazia",
+                        "itemImgUrl": "https://static.ragnaplace.com/bro/item/713.png",
+                        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/713.png",
+                        "cardImgUrl": null,
+                        "itemDescription": "Uma garrafa vazia para se carregar líquidos.\r\n_\r\nPeso: 2\r\n"
+                    },
+                    {
+                        "id": null,
+                        "itemId": 512,
+                        "nameItem": "Maçã",
+                        "itemImgUrl": "https://static.ragnaplace.com/bro/item/512.png",
+                        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/512.png",
+                        "cardImgUrl": null,
+                        "itemDescription": "Fruta de sabor doce e aroma apetitoso. \r\nDê um clique duplo no item para usar.\r\n--------------------------\r\nRecupera cerca de 16 a 22 de HP.\r\n--------------------------\r\nPeso: 2\r\n"
+                    },
+                    {
+                        "id": null,
+                        "itemId": 619,
+                        "nameItem": "Maçã Verde",
+                        "itemImgUrl": "https://static.ragnaplace.com/bro/item/619.png",
+                        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/619.png",
+                        "cardImgUrl": null,
+                        "itemDescription": "Maçã azeda ainda não amadurecida. Comida favorita do Poring.\r\nClasse: Item para Domesticar\r\nPeso: 5\r\n"
+                    },
+                    {
+                        "id": null,
+                        "itemId": 4001,
+                        "nameItem": "Carta Poring",
+                        "itemImgUrl": "https://static.ragnaplace.com/bro/item/4001.png",
+                        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/4001.png",
+                        "cardImgUrl": "https://static.ragnaplace.com/bro/card/4001.png",
+                        "itemDescription": "SOR +2, Esquiva Perfeita +1\r\nCombine com um item para utilizar sua propriedade. \r\nClasse: Carta\r\nEquipa em: Armadura\r\nPeso: 1\r\n"
+                    },
+                    {
+                        "id": null,
+                        "itemId": 601,
+                        "nameItem": "Asa de Mosca",
+                        "itemImgUrl": "https://static.ragnaplace.com/bro/item/601.png",
+                        "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/601.png",
+                        "cardImgUrl": null,
+                        "itemDescription": "Par de asas de mosca encantadas com magia.\r\nDê clique duplo neste item para ser transportar até um local aleatório no mapa.\r\n_\r\nPeso: 5\r\n"
+                    }
+                ],
+                "monsterStats": {
+                    "monsterLevel": 1,
+                    "monsterHp": 60,
+                    "monsterSize": 1,
+                    "monsterRace": 3
+                },
+                "elementExtraDamage": {
+                    "neutral": 100,
+                    "water": 25,
+                    "earth": 100,
+                    "fire": 90,
+                    "wind": 175,
+                    "poison": 100,
+                    "holy": 100,
+                    "dark": 100,
+                    "ghost": 100,
+                    "undead": 100
+                },
+                "monsterSpawnMaps": [
+                    {
+                        "mapId": "gef_fild00",
+                        "mapName": "Arredores de Geffen (00)"
+                    },
+                    {
+                        "mapId": "gef_fild07",
+                        "mapName": "Arredores de Geffen (07)"
+                    },
+                    {
+                        "mapId": "pay_fild01",
+                        "mapName": "Floresta de Payon (01)"
+                    },
+                    {
+                        "mapId": "pay_fild03",
+                        "mapName": "Floresta de Payon (03)"
+                    },
+                    {
+                        "mapId": "pay_fild04",
+                        "mapName": "Floresta de Payon (04)"
+                    },
+                    {
+                        "mapId": "prt_fild01",
+                        "mapName": "Arredores de Prontera (01)"
+                    },
+                    {
+                        "mapId": "prt_fild06",
+                        "mapName": "Arredores de Prontera (06)"
+                    },
+                    {
+                        "mapId": "prt_fild08",
+                        "mapName": "Arredores de Prontera (08)"
+                    },
+                    {
+                        "mapId": "prt_maze01",
+                        "mapName": "Labirinto da Floresta (1)"
+                    },
+                    {
+                        "mapId": "xmas_dun01",
+                        "mapName": "Depósito da Fábrica de Brinquedos"
+                    },
+                    {
+                        "mapId": "1@tower",
+                        "mapName": "Torre Sem Fim"
+                    }
+                ]
+            }</textarea>
 
         </div>
     </div>
