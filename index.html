@@ -3,49 +3,46 @@
 
 <head>
     <title>Ragnarök API</title>
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/navbar2.css">
+    <link href='fonts/roboto.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/navbar.css">
     <script src="js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="icon" type="image/png" href="img/android-icon-36x36.png">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <nav>
-                <div class="menu-icon">
-                    <i class=" fa fa-bars fa-2x"></i>
-                </div>
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
 
-                <div class="logo">Ragnarök API</div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#start">Inicio</a></li>
-                        <li><a href="#howToWork">Como funciona?</a></li>
-                        <li><a href="#attributes">Atributos</a></li>
-                        <li><a href="https://github.com/xjhofernandes/RagnarokAPI/">Documentação</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <div id="start" class="conteiner">
-            <div class="inline-block">
-                <div class="hero-text">
-                    <h2>Encontre e manipule milhares de dados de itens e monstros de Ragnarök Online</h2>
-                    <p>Use o API REST Ragnarök API em suas futuras aplicações ou projetos de desenvolvimento. Let's
-                        Rock!!</p>
-                    <a href="https://github.com/xjhofernandes/RagnarokAPI" id="hello" class="button">Nossa
-                        Documentação</a>
-                </div>
+    <header>
+        <nav>
+            <div class="logo">Ragnarök API</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#start">Inicio</a></li>
+                    <li><a href="#howToWork">Como funciona?</a></li>
+                    <li><a href="#attributes">Atributos</a></li>
+                    <li><a href="https://github.com/xjhofernandes/RagnarokAPI/">Documentação</a></li>
+                </ul>
             </div>
-            <div class="inline-block">
-                <div id="circle">
-                </div>
+        </nav>
+    </header>
+
+    <div id="start" class="conteiner">
+        <div class="inline-block">
+            <div class="hero-text">
+                <h2>Encontre e manipule milhares de dados de itens e monstros de Ragnarök Online</h2>
+                <p>Use o API REST Ragnarök API em suas futuras aplicações ou projetos de desenvolvimento. Let's
+                    Rock!!</p>
+                <a href="https://github.com/xjhofernandes/RagnarokAPI" id="hello" class="button">Nossa
+                    Documentação</a>
+            </div>
+        </div>
+        <div class="inline-block">
+            <div id="circle">
             </div>
         </div>
     </div>
+
 
 
     <br id="howToWork">
@@ -190,23 +187,6 @@
 
     </div>
 
-    <script type="text/javascript">
-        //Menu toggle-effect
-        $(document).ready(function () {
-            $(".menu-icon").on("click", function () {
-                $("nav ul").toggleClass("showing");
-            });
-        });
-
-        //Scrolling Effect
-        $(window).on('scroll', function () {
-            if ($(window).scrollTop()) {
-                $('nav').addClass('black');
-            } else {
-                $('nav').removeClass('black')
-            }
-        })
-    </script>
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
