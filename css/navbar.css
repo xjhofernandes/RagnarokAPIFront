@@ -101,6 +101,7 @@ label[for="bt_menu"] {
 
   label[for="bt_menu"] {
     display: block;
+    position: fixed;
   }
 
   .logo {
@@ -139,7 +140,7 @@ label[for="bt_menu"] {
 #circle {
   width: 400px;
   height: 400px;
-  border: 1px solid black;
+  border: 3px solid #2F3242;
   border-radius: 100%;
   background: url(../img/cover.jpg) center no-repeat;
 }
