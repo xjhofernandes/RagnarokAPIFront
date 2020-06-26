@@ -112,6 +112,7 @@ label[for="bt_menu"] {
   border-radius: 100%;
   background: url(../img/cover.jpg) center no-repeat;
 }
+
 /* IMAGEM */
 .inline-block {
   width: 40%;
@@ -220,7 +221,7 @@ label[for="bt_menu"] {
     max-height: 60px;
   }
 
-  .flex-container{
+  .flex-container {
     justify-content: center;
   }
 
@@ -242,13 +243,38 @@ label[for="bt_menu"] {
     text-align: center;
   }
 
-  .inline-block{
+  .inline-block {
     width: auto;
   }
 
   #circle {
     width: 327px;
     height: 321px;
+  }
+
+  .json-text {
+    margin-left: -45px;
+    margin-top: -21px;
+    width: 111%;
+  }
+
+  .site {
+    margin-left: -45px;
+  }
+
+  .busca .form-control {
+    margin-left: -45px;
+    height: auto;
+    padding-right: 176px;
+  }
+
+  .request-button {
+    margin-left: 52px;
+    padding-bottom: 14px;
+    padding-right: 36.2px;
+    margin-right: 4px;
+    border: none;
+    border-radius: none;
   }
 
 }
