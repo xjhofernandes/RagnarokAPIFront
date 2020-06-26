@@ -115,12 +115,9 @@ label[for="bt_menu"] {
     max-height: 60px;
   }
 
-  /* .logo {
-    position: fixed;
-    top: 0;
-    margin-top: 16px;
-  } */
-
+  .flex-container{
+    justify-content: center;
+  }
 
   #bt_menu:not(:checked)~* ul {
     display: none;
