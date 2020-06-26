@@ -35,21 +35,24 @@ header {
   user-select: none;
 }
 
+@media(min-width:920px) {
+  nav ul {
+    list-style: none;
+    background-color: #2F3242;
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+  }
+}
+
 nav {
   position: fixed;
   width: 100%;
 }
 
-nav ul {
-  list-style: none;
-  background-color: #2F3242;
-  overflow: hidden;
-  color: #fff;
-  padding: 0;
-  text-align: center;
-  margin: 0;
-  transition: 1s;
-}
 
 nav.black ul {
   background-color: #2F3242;
@@ -65,6 +68,7 @@ nav ul li a {
   color: #fff;
   font-size: 20px;
 }
+
 
 .menu-icon {
   width: 100%;
@@ -106,36 +110,38 @@ label[for="bt_menu"] {
     right: 0px;
   }
 
-  .logo {
+  nav {
+    background-color: #2F3242;
+    max-height: 60px;
+  }
+
+  nav ul {
+    padding-top: 60px;
+  }
+
+  /* .logo {
     position: fixed;
     top: 0;
     margin-top: 16px;
-  }
+  } */
 
-  nav {
-    margin-top: 5px;
-    margin-left: -100%;
+  .menu {
+    margin-right: -100%;
     transition: all .4s;
   }
 
-  #bt_menu:checked ~ * nav {
-    margin-left: 0;
+  #bt_menu:checked~* .menu {
+    margin-right: 0;
   }
 
-  nav.black ul {
-    background: #2F3242;
-  }
-
-  nav ul li {
+  .menu ul li {
     box-sizing: border-box;
     width: 100%;
     padding: 24px;
     text-align: center;
+    background-color: red;
   }
 }
-
-
-
 
 /* IMAGEM */
 
@@ -193,9 +199,7 @@ label[for="bt_menu"] {
 }
 
 .busca {
-  /* border: 1px solid black; */
   width: 81%;
-  /* background-color: #d0d3d4; */
   border-radius: 5px 5px 5px 5px;
   background: linear-gradient(90deg, #d0d3d4 50%, #f7f9f9 50%);
 }
@@ -219,7 +223,6 @@ label[for="bt_menu"] {
 
 .button {
   background-color: #2F3242;
-  ;
   border: none;
   color: white;
   padding: 15px 32px;
