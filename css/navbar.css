@@ -101,51 +101,7 @@ label[for="bt_menu"] {
   display: none;
 }
 
-@media(max-width:920px) {
 
-  label[for="bt_menu"] {
-    display: block;
-    position: fixed;
-    z-index: 10;
-    right: 0px;
-  }
-
-  nav {
-    background-color: #2F3242;
-    max-height: 60px;
-  }
-
-  .flex-container{
-    justify-content: center;
-  }
-
-  #bt_menu:not(:checked)~* ul {
-    display: none;
-    transition: all .4s;
-  }
-
-  .menu {
-    margin-top: 60px;
-    margin-right: 0;
-    background-color: #2F3242;
-    transition: all .4s;
-  }
-
-  /* .menu ul {
-    position: static;
-    overflow: hidden;
-    max-height: 0;
-    transition: all .4s;
-  } */
-
-  .menu ul li {
-    box-sizing: border-box;
-    width: 100%;
-    text-align: center;
-  }
-
-
-}
 
 /* IMAGEM */
 
@@ -156,7 +112,7 @@ label[for="bt_menu"] {
   border-radius: 100%;
   background: url(../img/cover.jpg) center no-repeat;
 }
-
+/* IMAGEM */
 .inline-block {
   width: 40%;
   padding: 20px;
@@ -179,7 +135,6 @@ label[for="bt_menu"] {
   text-decoration: none;
 }
 
-
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
@@ -188,7 +143,6 @@ label[for="bt_menu"] {
   height: 92px;
   padding-left: 5%;
 }
-
 
 .json-text {
   width: 80%;
@@ -207,7 +161,6 @@ label[for="bt_menu"] {
   border-radius: 5px 5px 5px 5px;
   background: linear-gradient(90deg, #d0d3d4 50%, #f7f9f9 50%);
 }
-
 
 .busca .site {
   color: #4d5656;
@@ -250,4 +203,52 @@ label[for="bt_menu"] {
   font-size: 16px;
   cursor: pointer;
   border-radius: 0px 5px 5px 0px;
+}
+
+
+@media(max-width:920px) {
+
+  label[for="bt_menu"] {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    right: 0px;
+  }
+
+  nav {
+    background-color: #2F3242;
+    max-height: 60px;
+  }
+
+  .flex-container{
+    justify-content: center;
+  }
+
+  #bt_menu:not(:checked)~* ul {
+    display: none;
+    transition: all .4s;
+  }
+
+  .menu {
+    margin-top: 60px;
+    margin-right: 0;
+    background-color: #2F3242;
+    transition: all .4s;
+  }
+
+  .menu ul li {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
+
+  .inline-block{
+    width: auto;
+  }
+
+  #circle {
+    width: 327px;
+    height: 321px;
+  }
+
 }
