@@ -278,25 +278,30 @@ label[for="bt_menu"] {
 
 }
 
-.disclosure{
+.disclosure {
   text-decoration: none;
-   user-select: none;
- }
+  user-select: none;
+}
 
-
- .gfg { 
-  margin:5px; 
-  padding:5px; 
+.gfg {
+  margin: 5px;
+  padding: 5px;
   background-color: #2F3242;
-  height: 400px; 
-  overflow: auto; 
-  text-align:justify; 
+  height: 400px;
+  overflow: auto;
+  text-align: justify;
   color: white;
   font-size: 18px;
-} 
+}
 
+.renderjson .disclosure {
+  color: white;
+}
 
-.renderjson .disclosure { color:white};
+.renderjson .key {
+  color: #A6ACAF;
+}
 
-.renderjson .key { color: #A6ACAF; }
-
+.renderjson a {
+  color: white;
+}
