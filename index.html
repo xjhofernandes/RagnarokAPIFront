@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <head>
     <title>Ragnarök API</title>
     <link href='fonts/roboto.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/navbar.css">
     <script src="js/index.js"></script>
+    <script src="https://cdn.rawgit.com/caldwell/renderjson/master/renderjson.js"></script>
     <link rel="icon" type="image/png" href="img/android-icon-36x36.png">
 </head>
 
 <body id="start">
-    <input  type="checkbox" id="bt_menu">
+    <input type="checkbox" id="bt_menu">
     <label for="bt_menu">&#9776;</label>
 
     <header>
@@ -27,7 +29,7 @@
         </nav>
     </header>
 
-    <div  class="conteiner">
+    <div class="conteiner">
         <div class="inline-block">
             <div class="hero-text">
                 <h2>Encontre e manipule milhares de dados de itens e monstros de Ragnarök Online</h2>
@@ -56,122 +58,20 @@
 
     <div class="content">
 
+
         <p>Utilizando os endereços "api/item/Id do Item" ou "api/monster/Id do Monstro", é possível obter as informações
             de itens ou monstros de Ragnarök Online. Teste a requisição abaixo:</p>
 
         <div class="bloco">
-
             <div class="busca">
                 <label class="site">https://ragnarokapi.herokuapp.com/</label><input id="request" type="text"
                     value="api/monster/1147" class="form-control"><button type="button" class="request-button"
                     onclick="FazerRequisição()">Buscar</button>
             </div>
-            <br>
-            <textarea id="jsonResult" class="json-text" rows="4" cols="50" readonly>
-    {
-        "monsterId": "1147",
-        "monsterName": "Maya",
-        "monsterGifUrl": "https://static.ragnaplace.com/db/npc/gif/1147.gif",
-        "monsterDrops": [
-        {
-            "itemId": 10006,
-            "nameItem": "Ornamento da Rainha",
-            "itemImgUrl": "https://static.ragnaplace.com/bro/item/10006.png",
-            "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/10006.png",
-            "cardImgUrl": null,
-            "itemDescription": "Ornamento de cabelo usado por uma antiga rainha.\r\nClasse: Acessório para Bicho de Estimação\r\nServe para: Isis\r\nPeso: 0\r\n"
-        },
-        {
-            "itemId": 2615,
-            "nameItem": "Anel de Defesa",
-            "itemImgUrl": "https://static.ragnaplace.com/bro/item/2615.png",
-            "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/2615.png",
-            "cardImgUrl": null,
-            "itemDescription": "Anel misterioso que aumenta a defesa do usuário.\r\nDEF +3, DEFM +3\r\nClasse: Acessório\r\nDefesa: 0\r\nPeso: 10\r\nNível necessário: 40\r\nClasses que utilizam: Todas as classes, exceto Aprendiz\r\n"
-        },
-        {
-            "itemId": 2234,
-            "nameItem": "Diadema",
-            "itemImgUrl": "https://static.ragnaplace.com/bro/item/2234.png",
-            "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/2234.png",
-            "cardImgUrl": null,
-            "itemDescription": "Coroa de jóias feita especialmente para mulheres. Diz a lenda que foi usada por uma rainha antiga e concede grande sabedoria a quem usa.\r\nINT +2\r\nClasse: Equipamento para a cabeça\r\nDefesa: 7\r\nEquipa em: Topo\r\nPeso: 40\r\nNível necessário: 45\r\nClasses que utilizam: Todas as classes, exceto Aprendiz\r\n"
-        },
-        {
-            "itemId": 639,
-            "nameItem": "Bracelete da Obediência",
-            "itemImgUrl": "https://static.ragnaplace.com/bro/item/639.png",
-            "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/639.png",
-            "cardImgUrl": null,
-            "itemDescription": "Bracelete finamente decorado. Item favorito da Isis.\r\nClasse: Item para Domesticar\r\nPeso: 5\r\n"
-        },
-        {
-            "itemId": 7020,
-            "nameItem": "Pesadelo Maternal",
-            "itemImgUrl": "https://static.ragnaplace.com/bro/item/7020.png",
-            "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/7020.png",
-            "cardImgUrl": null,
-            "itemDescription": "Essência solidificada de um pesadelo de mãe. Traz mau agouro.\r\n_\r\nPeso: 1\r\n"
-        },
-        {
-            "itemId": 985,
-            "nameItem": "Elunium",
-            "itemImgUrl": "https://static.ragnaplace.com/bro/item/985.png",
-            "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/985.png",
-            "cardImgUrl": null,
-            "itemDescription": "Metal muito leve, não-tóxico. Pode ser usado no aprimoramento de equipamentos de defesa.\r\n_\r\nPeso: 20\r\n"
-        },
-        {
-            "itemId": 2005,
-            "nameItem": "Cajado Dea",
-            "itemImgUrl": "https://static.ragnaplace.com/bro/item/2005.png",
-            "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/2005.png",
-            "cardImgUrl": null,
-            "itemDescription": "A imagem da Deusa Sagrada da Luz está entalhada neste cajado longo.\r\nIndestrutível em batalha.\r\nATQM +220.\r\nVIT +2. INT +6.\r\nAo usar [Curar], chance de recuperar 200 de SP.\r\nA cada refino:\r\nATQM +1%.\r\nTipo: Cajado de Duas Mãos\r\nPropriedade: Sagrado\r\nAtaque: 30\r\nPeso: 100\r\nNível da arma: 3\r\nNível necessário: 50\r\nClasse: Transcendentais de Noviço\r\n"
-        },
-        {
-            "itemId": 4146,
-            "nameItem": "Carta Maya",
-            "itemImgUrl": "https://static.ragnaplace.com/bro/item/4146.png",
-            "collectionImgUrl": "https://static.ragnaplace.com/bro/collection/4146.png",
-            "cardImgUrl": "https://static.ragnaplace.com/bro/card/4146.png",
-            "itemDescription": "50% de chance de refletir magias de alvo único recebidas. \r\nTipo: Carta \r\nEquipa em: Escudo \r\nPeso: 1\r\n"
-        }
-                    ],
-                    "monsterStats": {
-                        "monsterLevel": 55,
-                        "monsterHp": 380000,
-                        "monsterSize": 2,
-                        "monsterRace": 4
-                    },
-                    "elementExtraDamage": {
-                        "neutral": 100,
-                        "water": 100,
-                        "earth": -50,
-                        "fire": 200,
-                        "wind": 60,
-                        "poison": 75,
-                        "holy": 75,
-                        "dark": 75,
-                        "ghost": 25,
-                        "undead": 25
-                    },
-                    "monsterSpawnMaps": [
-                        {
-                            "mapId": "anthell02",
-                            "mapName": "Formigueiro Infernal (2)"
-                        },
-                        {
-                            "mapId": "gld_dun02_2",
-                            "mapName": "2º calabouço da Guilda"
-                        },
-                        {
-                            "mapId": "1@tower",
-                            "mapName": "Torre Sem Fim"
-                        }
-                    ]
-                }
-            </textarea>
+
+            <div class="gfg">
+                <div id="container"></div>
+            </div>
 
         </div>
     </div>
@@ -197,6 +97,25 @@
                 });
             });
         });
+    </script>
+
+    <script>
+        // The JSObject that you want to render
+        var data = {
+            hello: [1, 2, 3, 4],
+            there: {
+                a: 1,
+                b: 2,
+                c: ["hello", null]
+            }
+        };
+
+        var teste = JSON.parse(
+            '{ 	"monsterId": "1147", 	"monsterName": "Maya", 	"monsterGifUrl": "https://static.ragnaplace.com/db/npc/gif/1147.gif", 	"monsterDrops": [ 		{ 			"itemId": 10006, 			"nameItem": "Ornamento da Rainha", 			"itemImgUrl": "https://static.ragnaplace.com/bro/item/10006.png", 			"collectionImgUrl": "https://static.ragnaplace.com/bro/collection/10006.png", 			"cardImgUrl": null, 			"itemDescription": "Ornamento de cabelo usado por uma antiga rainha. Classe: Acessório para Bicho de Estimação Serve para: Isis Peso: 0 " 		}, 		{ 			"itemId": 2615, 			"nameItem": "Anel de Defesa", 			"itemImgUrl": "https://static.ragnaplace.com/bro/item/2615.png", 			"collectionImgUrl": "https://static.ragnaplace.com/bro/collection/2615.png", 			"cardImgUrl": null, 			"itemDescription": "Anel misterioso que aumenta a defesa do usuário. DEF +3, DEFM +3 Classe: Acessório Defesa: 0 Peso: 10 Nível necessário: 40 Classes que utilizam: Todas as classes, exceto Aprendiz " 		}, 		{ 			"itemId": 2234, 			"nameItem": "Diadema", 			"itemImgUrl": "https://static.ragnaplace.com/bro/item/2234.png", 			"collectionImgUrl": "https://static.ragnaplace.com/bro/collection/2234.png", 			"cardImgUrl": null, 			"itemDescription": "Coroa de jóias feita especialmente para mulheres. Diz a lenda que foi usada por uma rainha antiga e concede grande sabedoria a quem usa. INT +2 Classe: Equipamento para a cabeça Defesa: 7 Equipa em: Topo Peso: 40 Nível necessário: 45 Classes que utilizam: Todas as classes, exceto Aprendiz " 		}, 		{ 			"itemId": 639, 			"nameItem": "Bracelete da Obediência", 			"itemImgUrl": "https://static.ragnaplace.com/bro/item/639.png", 			"collectionImgUrl": "https://static.ragnaplace.com/bro/collection/639.png", 			"cardImgUrl": null, 			"itemDescription": "Bracelete finamente decorado. Item favorito da Isis. Classe: Item para Domesticar Peso: 5 " 		}, 		{ 			"itemId": 7020, 			"nameItem": "Pesadelo Maternal", 			"itemImgUrl": "https://static.ragnaplace.com/bro/item/7020.png", 			"collectionImgUrl": "https://static.ragnaplace.com/bro/collection/7020.png", 			"cardImgUrl": null, 			"itemDescription": "Essência solidificada de um pesadelo de mãe. Traz mau agouro. _ Peso: 1 " 		}, 		{ 			"itemId": 985, 			"nameItem": "Elunium", 			"itemImgUrl": "https://static.ragnaplace.com/bro/item/985.png", 			"collectionImgUrl": "https://static.ragnaplace.com/bro/collection/985.png", 			"cardImgUrl": null, 			"itemDescription": "Metal muito leve, não-tóxico. Pode ser usado no aprimoramento de equipamentos de defesa. _ Peso: 20 " 		}, 		{ 			"itemId": 2005, 			"nameItem": "Cajado Dea", 			"itemImgUrl": "https://static.ragnaplace.com/bro/item/2005.png", 			"collectionImgUrl": "https://static.ragnaplace.com/bro/collection/2005.png", 			"cardImgUrl": null, 			"itemDescription": "A imagem da Deusa Sagrada da Luz está entalhada neste cajado longo. Indestrutível em batalha. ATQM +220. VIT +2. INT +6. Ao usar [Curar], chance de recuperar 200 de SP. A cada refino: ATQM +1%. Tipo: Cajado de Duas Mãos Propriedade: Sagrado Ataque: 30 Peso: 100 Nível da arma: 3 Nível necessário: 50 Classe: Transcendentais de Noviço " 		}, 		{ 			"itemId": 4146, 			"nameItem": "Carta Maya", 			"itemImgUrl": "https://static.ragnaplace.com/bro/item/4146.png", 			"collectionImgUrl": "https://static.ragnaplace.com/bro/collection/4146.png", 			"cardImgUrl": "https://static.ragnaplace.com/bro/card/4146.png", 			"itemDescription": "50% de chance de refletir magias de alvo único recebidas.  Tipo: Carta  Equipa em: Escudo  Peso: 1 " 		} 	], 	"monsterStats": { 		"monsterLevel": 55, 		"monsterHp": 380000, 		"monsterSize": 2, 		"monsterRace": 4 	}, 	"elementExtraDamage": { 		"neutral": 100, 		"water": 100, 		"earth": -50, 		"fire": 200, 		"wind": 60, 		"poison": 75, 		"holy": 75, 		"dark": 75, 		"ghost": 25, 		"undead": 25 	}, 	"monsterSpawnMaps": [ 		{ 			"mapId": "anthell02", 			"mapName": "Formigueiro Infernal (2)" 		}, 		{ 			"mapId": "gld_dun02_2", 			"mapName": "2º calabouço da Guilda" 		}, 		{ 			"mapId": "1@tower", 			"mapName": "Torre Sem Fim" 		} 	] }'
+        );
+        document.getElementById("container").appendChild(
+            renderjson.set_icons('\u25BC', '\u25B6').set_show_to_level(3)(teste)
+        );
     </script>
 </body>
 

@@ -154,13 +154,12 @@ label[for="bt_menu"] {
 }
 
 .bloco {
-  padding-left: 15%;
+  /* padding-left: 15%; */
 }
 
 .busca {
   width: 81%;
   border-radius: 5px 5px 5px 5px;
-  background: linear-gradient(90deg, #d0d3d4 50%, #f7f9f9 50%);
 }
 
 .busca .site {
@@ -278,3 +277,26 @@ label[for="bt_menu"] {
   }
 
 }
+
+.disclosure{
+  text-decoration: none;
+   user-select: none;
+ }
+
+
+ .gfg { 
+  margin:5px; 
+  padding:5px; 
+  background-color: #2F3242;
+  height: 400px; 
+  overflow: auto; 
+  text-align:justify; 
+  color: white;
+  font-size: 18px;
+} 
+
+
+.renderjson .disclosure { color:white};
+
+.renderjson .key { color: #A6ACAF; }
+
