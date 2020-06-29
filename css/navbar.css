@@ -292,6 +292,7 @@ label[for="bt_menu"] {
   text-align: justify;
   color: white;
   font-size: 18px;
+  border-radius: 5px;
 }
 
 .renderjson .disclosure {
