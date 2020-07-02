@@ -252,6 +252,10 @@ label[for="bt_menu"] {
     width: 327px;
     height: 321px;
   }
+
+  .busca{
+    display: block;
+  }
 }
 
 .disclosure {
