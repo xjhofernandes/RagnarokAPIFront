@@ -265,6 +265,8 @@ label[for="bt_menu"] {
   .busca .form-control{
     padding: 0;
     height: 45px;
+    width: 99%;
+    border-radius: 5px;
   }
 }
 
@@ -275,8 +277,8 @@ label[for="bt_menu"] {
 
 .gfg {
   margin-top: 5px;
-  margin: 5px;
-  padding: 5px;
+  margin: none;
+  padding: 0px 0px 0px 1px;
   background-color: #2F3242;
   height: 400px;
   overflow: auto;
