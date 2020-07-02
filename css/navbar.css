@@ -160,6 +160,8 @@ label[for="bt_menu"] {
 }
 
 .busca {
+  display: flex;
+  justify-content: space-between;
 }
 
 .busca .site {
@@ -172,7 +174,7 @@ label[for="bt_menu"] {
 .busca .form-control {
   height: 36px;
   padding: 6px;
-  width: 61.57%;
+  width: 100%;
   padding-bottom: 9.7px;
   padding-top: 8px;
   font-size: 19px;
@@ -250,32 +252,6 @@ label[for="bt_menu"] {
     width: 327px;
     height: 321px;
   }
-
-  .json-text {
-    margin-left: -45px;
-    margin-top: -21px;
-    width: 111%;
-  }
-
-  .site {
-    margin-left: -45px;
-  }
-
-  .busca .form-control {
-    margin-left: -45px;
-    height: auto;
-    padding-right: 176px;
-  }
-
-  .request-button {
-    margin-left: 52px;
-    padding-bottom: 14px;
-    padding-right: 36.2px;
-    margin-right: 4px;
-    border: none;
-    border-radius: none;
-  }
-
 }
 
 .disclosure {
@@ -284,6 +260,7 @@ label[for="bt_menu"] {
 }
 
 .gfg {
+  margin-top: 5px;
   margin: 5px;
   padding: 5px;
   background-color: #2F3242;
@@ -291,7 +268,7 @@ label[for="bt_menu"] {
   overflow: auto;
   text-align: justify;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 5px;
 }
 
