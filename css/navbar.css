@@ -256,6 +256,16 @@ label[for="bt_menu"] {
   .busca{
     display: block;
   }
+
+  .request-button{
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .busca .form-control{
+    padding: 0;
+    height: 45px;
+  }
 }
 
 .disclosure {
